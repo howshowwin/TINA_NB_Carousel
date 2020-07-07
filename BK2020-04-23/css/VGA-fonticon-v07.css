@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'vga-font-icon';
+  src: url("https://storage-asset.msi.com/global/css/VGA/fonticon/vgafontsV6/vga-font-icon.eot?9ur3ma");
+  src: url("https://storage-asset.msi.com/global/css/VGA/fonticon/vgafontsV6/vga-font-icon.eot?9ur3ma#iefix") format("embedded-opentype"), url("https://storage-asset.msi.com/global/css/VGA/fonticon/vgafontsV6/vga-font-icon.ttf?9ur3ma") format("truetype"), url("https://storage-asset.msi.com/global/css/VGA/fonticon/vgafontsV6/vga-font-icon.woff?9ur3ma") format("woff"), url("https://storage-asset.msi.com/global/css/VGA/fonticon/vgafontsV6/vga-font-icon.svg?9ur3ma#vga-font-icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.vga-icon:before {
+  content: "_";
+  font-family: 'vga-font-icon' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  speak: none;
+  text-transform: none; }
+
+.vga-icon.vga-thermal-padding:before {
+  content: "\e922"; }
+
+.vga-icon.vga-power-cooling-plate:before {
+  content: "\e923"; }
+
+.vga-icon.vga-solid-thermals:before {
+  content: "\e924"; }
+
+.vga-icon.vga-dynamic-backplate:before {
+  content: "\e925"; }
+
+.vga-icon.vga-oc-performance:before {
+  content: "\e920"; }
+
+.vga-icon.vga-heatsink-lighting:before {
+  content: "\e921"; }
+
+.vga-icon.vga-dashboard-light:before {
+  content: "\e92b"; }
+
+.vga-icon.vga-phantom-lighting:before {
+  content: "\e92c"; }
+
+.vga-icon.vga-vga-icon-MasteryCooling:before {
+  content: "\e91f";
+  color: #fff; }
+
+.vga-icon.vga-vga-multi:before {
+  content: "\e91e"; }
+
+.vga-icon.vga-vga-TorxFan:before {
+  content: "\e919"; }
+
+.vga-icon.vga-vga-HeatPipe-R:before {
+  content: "\e91a"; }
+
+.vga-icon.vga-vga-Double-Ball:before {
+  content: "\e91b"; }
+
+.vga-icon.vga-vga-Personalize:before {
+  content: "\e91c"; }
+
+.vga-icon.vga-vga-vrReady:before {
+  content: "\e91d"; }
+
+.vga-icon.vga-vga-HeatPipes:before {
+  content: "\e928"; }
+
+.vga-icon.vga-vga-Compound:before {
+  content: "\e929";
+  color: #fff; }
+
+.vga-icon.vga-vga-HighQuality:before {
+  content: "\e92a";
+  color: #fff; }
+
+.vga-icon.vga-mb-flashback:before {
+  content: "\e918"; }
+
+.vga-icon.vga-amd-turbo-usb31:before {
+  content: "\e917"; }
+
+.vga-icon.vga-slot-power:before {
+  content: "\e910"; }
+
+.vga-icon.vga-super-mining-machine:before {
+  content: "\e911"; }
+
+.vga-icon.vga-mb-mining-management:before {
+  content: "\e912"; }
+
+.vga-icon.vga-mb-mining-led:before {
+  content: "\e913"; }
+
+.vga-icon.vga-mb-mining-guard:before {
+  content: "\e914"; }
+
+.vga-icon.vga-mb-highQuality:before {
+  content: "\e915"; }
+
+.vga-icon.vga-mb-core-boost:before {
+  content: "\e916"; }
+
+.vga-icon.vga-pc-upgradable:before {
+  content: "\e90d"; }
+
+.vga-icon.vga-pc-optimized-gaming:before {
+  content: "\e90e"; }
+
+.vga-icon.vga-pc-compact-size:before {
+  content: "\e90f"; }
+
+.vga-icon.vga-diskless:before {
+  content: "\e908"; }
+
+.vga-icon.vga-x-powerSync:before {
+  content: "\e909"; }
+
+.vga-icon.vga-x8pin2:before {
+  content: "\e90a"; }
+
+.vga-icon.vga-x8pin:before {
+  content: "\e90b"; }
+
+.vga-icon.vga-heasink-design:before {
+  content: "\e90c"; }
+
+.vga-icon.vga-intel-usb31G2:before {
+  content: "\e906"; }
+
+.vga-icon.vga-Nahiic3:before {
+  content: "\e907"; }
+
+.vga-icon.vga-pc-gameStorage:before {
+  content: "\e905"; }
+
+.vga-icon.vga-hiRes-audio:before {
+  content: "\e903"; }
+
+.vga-icon.vga-pc-gameboost:before {
+  content: "\e904"; }
+
+.vga-icon.vga-dt-easy-upgrade:before {
+  content: "\e902"; }
+
+.vga-icon.vga-pc-msi-VGA:before {
+  content: "\e901"; }
+
+.vga-icon.vga-PC-silent3-Pro:before {
+  content: "\e900"; }
+
+.vga-icon.vga-Z370-Audio-DAC:before {
+  content: "\e9011"; }
+
+.vga-icon.vga-Z370-Killer-Xtend:before {
+  content: "\e9010"; }
+
+.vga-icon.vga-mb-nahimic2Plus:before {
+  content: "\e808"; }
+
+.vga-icon.vga-dx-mounting:before {
+  content: "\e806";
+  color: #fff; }
+
+.vga-icon.vga-mb-lpt:before {
+  content: "\e805"; }
+
+.vga-icon.vga-mb-shield-Frozr:before {
+  content: "\e801";
+  color: #fff; }
+
+.vga-icon.vga-stormcooling3:before {
+  content: "\e800"; }
+
+.vga-icon.vga-dual-intel:before {
+  content: "\e7023"; }
+
+.vga-icon.vga-mb-optane-genie:before {
+  content: "\e7022"; }
+
+.vga-icon.vga-system-saver:before {
+  content: "\e7021"; }
+
+.vga-icon.vga-mc-4th:before {
+  content: "\e7020"; }
+
+.vga-icon.vga-mc-6th:before {
+  content: "\e7019"; }
+
+.vga-icon.vga-mis-afterburner:before {
+  content: "\e7018"; }
+
+.vga-icon.vga-xsplit:before {
+  content: "\e7011"; }
+
+.vga-icon.vga-vga-design:before {
+  content: "\e7001"; }
+
+.vga-icon.vga-Torx-fan2:before {
+  content: "\e7000"; }
+
+.vga-icon.vga-zero-frozr:before {
+  content: "\e7002";
+  color: #fff; }
+
+.vga-icon.vga-vr-optimized-io:before {
+  content: "\e7003"; }
+
+.vga-icon.vga-smooth-heatpipes:before {
+  content: "\e7004"; }
+
+.vga-icon.vga-high-4k:before {
+  content: "\e7005"; }
+
+.vga-icon.vga-gpu-core:before {
+  content: "\e7006";
+  color: #fff; }
+
+.vga-icon.vga-double-ball-bearing:before {
+  content: "\e7007";
+  color: #fff; }
+
+.vga-icon.vga-backplate:before {
+  content: "\e7008";
+  color: #fff; }
+
+.vga-icon.vga-anti-tearing:before {
+  content: "\e7009"; }
+
+.vga-icon.vga-airflow-control:before {
+  content: "\e7010"; }
+
+.vga-icon.vga-vr-boost-kit:before {
+  content: "\e7017"; }
+
+.vga-icon.vga-gaming-app {
+  background-image: url("//storage-asset.msi.com/global/picture/image/feature/vga/NVIDIA/GTX1080Ti/icons/vga-gamingApp.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.vga-icon.vga-gaming-app:before {
+  color: rgba(0, 0, 0, 0); }
+
+.vga-icon.vga-gaming-wtf {
+  background-image: url("//storage-asset.msi.com/global/picture/image/feature/vga/NVIDIA/GTX1080Ti/icons/vga-wtf.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.vga-icon.vga-gaming-wtf:before {
+  color: rgba(0, 0, 0, 0); }
+
+.vga-icon.vga-lighting-backplate {
+  background-image: url("//storage-asset.msi.com/global/picture/image/feature/vga/NVIDIA/RTX2080Ti/vga-carbon-backplate.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.vga-icon.vga-lighting-backplate:before {
+  color: rgba(0, 0, 0, 0); }
+
+.vga-icon.vga-dragonCenter-n {
+  background-image: url("//storage-asset.msi.com/global/picture/image/feature/vga/NVIDIA/RTX2080Ti/vga-dragonCenter-new.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.vga-icon.vga-dragonCenter-n:before {
+  color: rgba(0, 0, 0, 0); }

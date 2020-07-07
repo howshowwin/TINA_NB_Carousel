@@ -1,0 +1,188 @@
+@import 'mixin';
+@import "common-main-var";
+@import 'var_prod';
+@import 'prod-compare';
+@import 'prod-aside-filter';
+@import 'pagination';
+
+#banner{
+	.imgxs{display: none;}
+	.owl-nav{
+		button{
+			position: absolute;
+			top: 50%;
+			z-index: 3;
+			&.owl-prev{
+				left: 30px;
+			}
+			&.owl-next{
+				right: 30px;
+			}
+		}	
+	}
+	.owl-dots{
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, -50%);
+		button{
+			background: #666;
+			width: 50px;
+			height: 3px;
+			margin: 5px 2px;
+			cursor: pointer;
+			&:hover,&.active{
+				background: $col-red;
+			}
+		}
+	}
+	@include vw960{
+		.imglg{display: none;}
+		.imgxs{display: block;}
+	}
+}
+#product{
+	@include container;
+	padding: $main-sp;
+	position: relative;
+	h1{
+		font-size: $h1;
+		text-transform: uppercase;
+		span{
+			padding-left: 10px;
+			font-size: 80%;
+			&:before{
+				content: "(";
+				padding-right: 5px;
+			}
+			&:after{
+				content: ")";
+				padding-left: 5px;
+			}
+		}
+	}
+}
+.mainbox{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 60px;
+}
+.aside{	
+	flex: 0 0 20%;
+	.filter-options{
+		padding-left: 12px;
+	}
+}
+.main{
+	flex: 0 0 78%;
+	text-align: center;
+	h2{
+		font-size: $h2;
+		color: $col-red;
+	}
+}
+.newpd{	
+	.pd{
+		display: inline-flex;
+		width: calc(25% - 4px);
+		box-sizing: border-box;
+		padding: 20px;
+		transition: $ts;
+		img{width: 80%;}
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+	a{
+		color: #fff;
+		&:hover{
+			color: $col-red;
+		}
+	}
+	h4{
+		font-weight: bold;
+	}
+}
+#quick-link{
+	padding-top: 35px;
+	display: flex;
+	justify-content: space-between;
+	.txt{
+		transition: $ts;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction:column;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-transform: uppercase;
+		img{width: 80px;}
+	}
+	a{
+		flex: 0 0 24%;		
+		padding-bottom: 15%;
+		position: relative;
+		color: #fff;
+		background-size: 100%;
+		background-attachment: center;
+		display: block;
+		&:hover{
+			.txt{
+				transform: scale(1.6);
+				text-shadow: #000 0 0 10px;
+				img{
+					filter: drop-shadow(#000 0 0 10px);
+				}
+			}
+		}
+	}
+	.img1{
+		background-image: url("https://storage-asset.msi.com/template/images/MBindex/BeefUpYourRigBg.jpg");
+	}
+	.img2{
+		background-image: url("https://storage-asset.msi.com/template/images/MBindex/InstallationGuideBg.jpg");
+	}
+	.img3{
+		background-image: url("https://storage-asset.msi.com/template/images/MBindex/GraphicCardBlogBg.jpg");
+	}
+	.img4{
+		background-image: url("https://storage-asset.msi.com/template/images/MBindex/GameCalendarbg.jpg");
+	}
+	&:hover{
+		a{
+			opacity: .4;
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}
+@include vw1920{
+} 
+
+@include vw1366{
+	.aside{
+		flex: 0 0 25%;
+	}
+	.main{
+		flex: 0 0 74%;
+	}
+}
+
+@include vw960{
+	.titlebox{
+		position: relative;
+		top: auto;
+	}
+	.mainbox{
+		display: block;
+		padding-top: 0;
+	}
+	.aside{
+		margin-top: 20px;
+	}
+}

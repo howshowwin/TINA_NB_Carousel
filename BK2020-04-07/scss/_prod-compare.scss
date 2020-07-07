@@ -1,0 +1,149 @@
+#bt-open-compare{
+	transform: rotate(-90deg);
+	position: fixed;
+	left: -60px;
+	bottom: 10%;
+	height: 50px;
+	font-size: 16px;
+	text-transform: uppercase;
+	z-index: 9;
+	padding: 0 15px;
+	background: $col-red;
+	border: none;
+	color: #ffff;
+	cursor: pointer;
+	transition: $ts;
+	i{
+		margin-right: 10px;
+	}
+	span{
+		width: 20px;
+		height: 20px;
+		background: #000;
+		border-radius: 50%;
+		display: inline-block;
+		margin-left: 10px
+	}
+	&:hover{
+		background: #fff;
+		color: $col-red;
+		span{
+			background: $col-red;
+			color: #fff;
+		}
+	}
+	&.close{
+		left: -150px;
+	}
+	@include vw960{
+		height: 30px;
+		left: -65px;
+		font-size: 14px;
+	}
+}
+#comparebox{
+	background: #111;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	bottom: 0;
+	left: -210vw; 
+	border-top: $col-red 1px solid;
+	padding: 25px 0;
+	transition: $ts;
+	&.show{
+		left: 0%;
+	}
+	.compare-content{
+		@include container;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+	}
+	button{
+		border: none;
+		background: #fff;
+		font-size: 16px;
+		text-transform: uppercase;
+		padding: 10px 15px;
+		border-radius: 3px;
+		transition: $ts;
+		cursor: pointer;
+		&:hover{
+			background: $col-red;
+			color: #fff;
+		}
+	}
+	#bt-close-compare{
+		position: absolute;
+		right: 0;
+		top: 15px;
+		background: none;
+		color: #fff;
+		padding: 0;
+		&:hover{
+			color: $col-red;
+		}
+	}
+	.txtbox{
+		flex: 0 0 22%;
+		padding-right: 25px;
+		border-right: #222 1px solid;
+		padding-top: 1.8%;
+	}
+	.pdbox{
+		flex: 0 0 60%;
+		display: flex;
+	}
+	.pd{
+		margin-left: 35px;
+		text-align: center;
+		position: relative;
+		flex: 0 0 22%;
+		&:hover{
+			figure{
+				filter:blur(2px);
+			}	
+			.bt-remove{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+	.bt-remove{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		display: none;
+	}
+	h5{
+		font-size: 16px;
+	}
+	.bt{
+		flex: 0 0 18%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		button{
+			i{
+				margin-right: 5px;
+			}
+		}
+	}
+	h4{
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 25px 0;
+		font-size: 20px;
+		letter-spacing: 2px;
+	}
+	p{
+		font-size: 16px;
+		opacity: .6;
+		line-height: 1.6;
+	}
+}

@@ -1,0 +1,125 @@
+@media (max-width: 1366px) {
+    .msi_nav .msi_logo {
+        width: 180px;
+        height: 65px;
+        margin-left: 7%;
+    }
+    .msi_nav .main_nav li {
+        list-style: none;
+    }
+    .msi_nav .main_nav li a {
+        padding: 22px 15px;
+    }
+    .msi_nav .navbar-right {
+        margin: 0;
+        color: #fff;
+    }
+    .msi_nav .navbar-right li {
+        margin-right: 3px;
+    }
+    .footerbottom {
+        flex-flow: column wrap;
+    }
+    .footerbottom .copyright {
+        display: block;
+        text-align: center;
+        padding: 10px 0 0;
+        line-height: 16px;
+    }
+    .footerbottom .quicklink {
+        width: 100%;
+        justify-content: center;
+        order: -1;
+    }
+    .footerbottom .quicklink li a {
+        padding: 15px 15px 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .msi_nav {
+        align-items: center;
+    }
+    .msi_nav .msi_logo {
+        width: 180px;
+        height: 65px;
+        margin-left: 7%;
+    }
+    /*.msi_nav .main_nav {
+        display: none;
+    }*/
+    .msi_nav .menu-toggle {
+        display: block;
+        order: -1;
+        margin: 0 15px;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .footerbottom {
+        padding-top: 10px;
+    }
+    .footerbottom .quicklink li a {
+        padding: 8px 8px 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footertop {
+        position: relative;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 0 auto;
+        padding: 8px 16px 8px;
+    }
+    .footertop>li {
+        border-bottom: 1px solid #262626;
+    }
+    .footertop>li:last-of-type {
+        border-bottom: 0px solid #262626;
+    }
+    .footertop li ul {
+        display: none;
+        padding-bottom: 10px;
+    }
+    .footertop li ul li a {
+        width: 100%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .footertop li h2 {
+        cursor: pointer;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 414px) {
+    .msi_nav {
+        align-items: center;
+    }
+    .msi_nav .msi_logo {
+        margin-left: 0%;
+    }
+    .msi_nav .main_nav {
+        display: none;
+    }
+    .msi_nav .menu-toggle {
+        display: block;
+        order: -1;
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .msi_nav .msi_logo {
+        width: 53px;
+        height: 65px;
+        background: url(../images/msi_logo.png) -10px 50% no-repeat;
+        background-size: 180px;
+        margin-left: 0%;
+    }
+}

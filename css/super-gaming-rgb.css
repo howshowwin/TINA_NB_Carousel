@@ -1,0 +1,533 @@
+.effect-rainbow {
+    background-image: -webkit-gradient(linear, right center, left center, from(#f00), to(#f00), color-stop(15%, #f0f), color-stop(33%, #00f), color-stop(49%, #0ff), color-stop(67%, #0f0), color-stop(84%, #ff0));
+    background-image: -webkit-repeating-linear-gradient(right, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
+    background-image: -o-repeating-linear-gradient(right, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
+    background-image: repeating-linear-gradient(to left, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
+    background-size: 115%;
+    -webkit-animation: wave 4.9s infinite linear;
+    animation: wave 4.9s infinite linear;
+    opacity: 0.7;
+}
+
+.effect-steady {
+    opacity: 0.7;
+}
+
+.effect-breathing {
+    -webkit-animation: breathing 5s infinite;
+    /* Safari 4+ */
+    -moz-animation: breathing 5s infinite;
+    /* Fx 5+ */
+    -o-animation: breathing 5s infinite;
+    /* Opera 12+ */
+    animation: breathing 5s infinite;
+    /* IE 10+, Fx 29+ */
+}
+
+.effect-flash {
+    -webkit-animation: flash 3s infinite;
+    /* Safari 4+ */
+    -moz-animation: flash 3s infinite;
+    /* Fx 5+ */
+    -o-animation: flash 3s infinite;
+    /* Opera 12+ */
+    animation: flash 3s infinite;
+    /* IE 10+, Fx 29+ */
+}
+
+.effect-doubleflash {
+    -webkit-animation: DoubleFlash 3s infinite;
+    /* Safari 4+ */
+    -moz-animation: DoubleFlash 3s infinite;
+    /* Fx 5+ */
+    -o-animation: DoubleFlash 3s infinite;
+    /* Opera 12+ */
+    animation: DoubleFlash 3s infinite;
+    /* IE 10+, Fx 29+ */
+}
+
+
+/* keyframe*/
+
+
+/* rainbow */
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+    16.6% {
+        background-color: yellow;
+    }
+    33.2% {
+        background-color: lime;
+    }
+    49.8% {
+        background-color: cyan;
+    }
+    66.4% {
+        background-color: blue;
+    }
+    83% {
+        background-color: magenta;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+    16.6% {
+        background-color: yellow;
+    }
+    33.2% {
+        background-color: lime;
+    }
+    49.8% {
+        background-color: cyan;
+    }
+    66.4% {
+        background-color: blue;
+    }
+    83% {
+        background-color: magenta;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+
+/**breathing**/
+
+@-webkit-keyframes staticE {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@-moz-keyframes staticE {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes staticE {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes staticE {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/**breathing**/
+
+@-webkit-keyframes breathing {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes breathing {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes breathing {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes breathing {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/**
+*
+flashing*/
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/**
+*
+double flashing*/
+
+@-webkit-keyframes DoubleFlash {
+    0% {
+        opacity: 0;
+    }
+    16.6% {
+        opacity: 0.8;
+    }
+    33.2% {
+        opacity: 0;
+    }
+    49.8% {
+        opacity: 0.8;
+    }
+    66.4% {
+        opacity: 0;
+    }
+    83% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes DoubleFlash {
+    0% {
+        opacity: 0;
+    }
+    16.6% {
+        opacity: 0.8;
+    }
+    33.2% {
+        opacity: 0;
+    }
+    49.8% {
+        opacity: 0.8;
+    }
+    66.4% {
+        opacity: 0;
+    }
+    83% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes DoubleFlash {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    12% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    25% {
+        opacity: 0;
+    }
+    38% {
+        opacity: 0;
+    }
+    42% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 0.8;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes wave {
+    0% {
+        background-position-x: 67vw;
+    }
+    100% {
+        background-position-x: 28vw;
+    }
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 67vw;
+    }
+    100% {
+        background-position-x: 28vw;
+    }
+}
+
+ul.RXicons {
+  margin: 0;
+  padding: 0; 
+}
+
+ul.RXicons li{
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+  padding: 8px;
+  cursor: pointer;
+}
+ul.RXicons li:hover img{
+}
+ul.RXicons li img{
+  background-color: #fff;
+  border-radius: 15px;
+}
+ul.RXicons li span{
+  line-height: 1.2;
+  display: block;
+  padding-top: 5px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.iconfilter {
+    filter: brightness(0.3);
+}
+
+
+.effect-gif,.lightsvg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+.lightsvg {
+  display: block;
+}
+
+.effect-show {
+    display: block;
+}
+
+.rxImg {
+    position: relative;
+    z-index: 7;
+}
+
+/*ul.RXicons > li {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    padding: 8px;
+}
+
+.iconfilter {
+    filter: brightness(0.3);
+}
+
+ul.RXicons > li a {
+    display: block;
+}
+
+.RXiconsT {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+}
+
+.iconxxx a{
+  color: #fff;
+  font-size: 14px;
+}
+.iconxxx a img {
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15px;
+}*/
+
+.btnActive {
+    filter: brightness(100%);
+}
+
+/*rx-rgb*/
+/*rx-rgb*/
+#rx-rgb .rgbbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+}
+
+#rx-rgb .iconbox {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 45%;
+  flex: 0 0 45%;
+  text-align: center;
+}
+
+#rx-rgb .iconbox p {
+  font-weight: bold;
+}
+
+#rx-rgb #rgbimgshow {
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+#rx-rgb .imgbox {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  
+}
+
+#rx-rgb .imgtop {
+  position: relative;
+  z-index: 0;
+  z-index: 10;
+}
+
+#rx-rgb .Colorwrapper {
+  padding-bottom: 3%;
+}
+
+#rx-rgb .Colorwrapper p {
+  padding-bottom: 0;
+}
+
+#rx-rgb #demoWheel {
+  margin: 0 auto 25px;
+  max-width: 180px;
+  width: 100%;
+}
+
+#rx-rgb .dwbtbox {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 960px) {
+  #rx-rgb .rgbbox {
+    display: block;
+  }
+}

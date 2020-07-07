@@ -1,0 +1,300 @@
+@import 'mixin';
+@import "common-main-var";
+@import 'var_prod';
+$col-line: #ccc;
+@import 'prod-compare-white';
+@import 'prod-aside-filter-white';
+@import 'pagination-white';
+
+body{
+	background: #fff;
+}
+#product{
+	@include container;
+	padding: $main-sp;
+	position: relative;
+	color: $bft-colw;
+	h1{
+		font-size: $h1;
+		text-transform: uppercase;
+		span{
+			padding-left: 10px;
+			font-size: 80%;
+			&:before{
+				content: "(";
+				padding-right: 5px;
+			}
+			&:after{
+				content: ")";
+				padding-left: 5px;
+			}
+		}
+	}
+}
+.titlebox{
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	left: 0;
+	z-index: 2;
+}
+.breadcrumb{
+	font-size: 16px;
+	padding: 10px 0;
+	a{
+		color: $col-gray;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	li{
+		display: inline-block;
+		&:after{
+			content: "/";
+			padding: 0 15px;
+			font-size: 12px;
+		}
+		&:last-child:after{
+			display: none;
+		}
+	}
+}
+.mainbox{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 60px;
+}
+.aside{	
+	flex: 0 0 20%;
+	margin-top: 60px;
+}
+#bt-filter-show{
+	background: #1a1a1a;
+	border: none;
+	width: 100%;
+	color: #fff;
+	padding:25px;
+	font-size: 16px;
+	cursor: pointer;
+	i{
+		margin-right: 5px;
+	}
+	.icon-msi-up-arrow{
+		display: none;
+	}
+	&.on{
+		border-bottom: #333 1px solid;
+		.icon-msi-up-arrow{
+			display: inline-block;
+		}
+		.icon-msi-level{
+			display: none;
+		}
+	}
+}
+.main{
+	flex: 0 0 78%;
+}
+.sortbar{
+	text-align: right;
+	height: 65px;
+	display: flex;
+	align-items: center;
+	justify-content:flex-end;
+	color: #666;
+	select{
+		text-transform: uppercase;
+		background: none;
+		border: none;
+		color: #666;
+		padding: 5px;
+		margin-left: 10px;
+		border-radius: 5px;
+		outline: none;
+		cursor: pointer;
+		font-size: 16px;
+		border: #666 1px solid;
+	}
+}
+.pdlist{
+	.pditem{
+		display: inline-flex;
+		flex-wrap: wrap;
+		width: calc(100% / 4 - 24px);
+		text-align: center;
+		border: $col-line 1px solid;
+		text-align: center;
+		padding: 15px 25px 35px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		transition: $ts;
+		div{
+			width: 100%;
+		}
+		&:hover{
+			transform: scale(1.05);
+		}
+	}
+	.bt-addcompare{
+		text-align: center;
+		padding: 15px 0;
+		width: 100%;
+		border-bottom: $col-line 1px solid;
+		margin-bottom: 25px;		
+		label{
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			&:before{
+				content: "";
+				width: 10px;
+				height: 10px;
+				border: $col-line 1px solid;
+				border-radius: 3px;
+				margin-right: 12px;
+			}
+		}
+		input[type="checkbox"]{
+			display: none;
+			&:checked + label{
+				&:before{
+					@include bg-cover("icon-check-w.svg",center,center);
+					background-color: $col-red;
+					border-color: #c00;
+				}
+			}
+		}
+	}
+	h2{
+		font-weight: bold;
+		a{
+			color: #222;
+			&:hover{
+				color: #000;
+			}
+		}
+		span{
+			display: block;
+			font-weight: normal;
+			color: #666;
+			&:after{
+				content: ")";
+				padding-left: 3px;
+			}
+			&:before{
+				content: "(";
+				padding-right: 3px;
+			}
+		}
+	}
+	.color{
+		height: 20px;
+		text-align: center;
+		margin-top: 25px;
+		span{
+			height: 20px;
+			width: 100%;
+			text-align: center;
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			margin: 0 2px;
+			border: $col-line 1px solid;
+		}
+	}
+	.bt{
+		button{
+			background: #999;
+			border: none;
+			margin: 25px auto 0;
+			color: #fff;
+			padding: 8px 15px;
+			border-radius: 3px;
+			cursor: pointer;
+			transition: $ts;
+			min-width: 60%;
+			font-size: 16px;
+			border: #999 1px solid;
+			text-transform: uppercase;
+			&:hover{
+				border-style: inset;
+				min-width: 100%;
+			}
+		}
+	}
+}
+
+
+
+@include vw1920{
+	.sortbar{
+		font-size: 16px;
+		select{
+			font-size: 14px;
+		}
+	}
+	.pdlist{
+		.bt-addcompare{
+			font-size: 14px;
+		}
+		h2 span{
+			font-size: 16px;
+		}	
+	}
+	.pdlist{
+		.bt button{
+			font-size: 14px;
+		}
+	}
+} 
+
+@include vw1366{
+	.aside{
+		flex: 0 0 25%;
+	}
+	.main{
+		flex: 0 0 74%;
+	}
+	.pdlist{
+		.pditem{
+			width: calc(100% / 3 - 24px);
+		}
+	}
+}
+
+@include vw960{
+	.titlebox{
+		position: relative;
+		top: auto;
+	}
+	.mainbox{
+		display: block;
+		padding-top: 0;
+	}
+	.aside{
+		margin-top: 20px;
+	}	
+	.pdlist{
+		.pditem{
+			width: calc(100% / 2 - 20px);
+			margin: 8px;
+		}
+	}
+	.sortbar{
+		padding:20px 0 10px;
+		height: auto;
+		 justify-content:flex-start;
+	}
+}
+
+@include vw768{
+	.pdlist{
+		.pditem{
+			width: 100%;
+			margin: 10px auto;
+		}
+	}
+}

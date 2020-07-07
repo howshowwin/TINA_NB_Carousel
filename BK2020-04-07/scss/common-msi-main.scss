@@ -1,0 +1,49 @@
+@import "reset";
+@import "mixin";
+@import "common-main-var";
+@import "common";
+
+
+html{
+	width: 100vw;
+}
+
+body{
+	font-family: $bft;
+	font-size: $bft-sz;
+	color: $bft-col;
+	background: #000;
+	width: 100vw;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	&.bg-white{
+	 	background: #fff;
+	 	color: $bft-colw;
+	}
+	button{
+		font-family: $bft;
+	}
+	@include vw1920{
+		font-size: $bft-sz-md;
+	}
+	@include vw960{
+		font-size: $bft-sz-xs;
+	}
+	*{
+		box-sizing: border-box;
+	}
+	sup{
+		vertical-align: super;
+		font-size: 50%;
+		padding-left: 2px;
+	}
+}
+
+
+@include vw960{
+	.hidden-xs{
+		display: none !important;
+	}
+}
+	

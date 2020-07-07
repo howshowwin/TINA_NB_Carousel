@@ -1,0 +1,212 @@
+//背景設定
+@mixin body-bg($bgcolor){
+	background:$bgcolor;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+@mixin container{
+	width: 80%;
+	max-width: 2200px;
+	margin: 0 auto;
+	@media screen and (max-width:1920px){
+		width: 90%;
+	}
+	@media screen and (max-width:960px){
+		width: 85%;
+	}
+}
+
+@mixin detail-container{
+	width: 80%;
+	max-width: 2200px;
+	margin: 0 auto;
+}
+
+@mixin bg-cover($bg, $wd, $hi, $bgcolor:""){
+	background:url(#{$img-url}/#{$bg}) + " " + $wd  + " " + $hi  + " " + no-repeat  + " " + $bgcolor;
+	background-size:cover; 
+}
+
+@mixin bg-cover-auto($bg, $wd, $hi, $bgcolor:""){
+	background:url(#{$img-url}/#{$bg}) + " " + $wd  + " " + $hi  + " " + no-repeat  + " " + $bgcolor;
+	background-size:cover auto; 
+}
+
+@mixin bg-img($bg, $wd, $hi, $repeat){
+	@content;background:url(#{$img-url}/#{$bg}) + " " + $wd  + " " + $hi  + " " + $repeat;
+}
+
+//a
+@mixin a($acolor, $ahover){
+	color:$acolor;
+	&:hover{
+		color:$ahover;	
+	}
+}
+
+//div 位置
+@mixin bc($wd, $maxwd:auto){
+	width: $wd;
+	margin: 0 auto;
+	max-width:$maxwd;
+}
+
+//float
+@mixin float($float, $wd:auto, $maxwd:auto){
+	float:$float;
+	width:$wd;
+	max-width:$maxwd;
+}
+
+@mixin clearfix{
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	content:"";
+}
+
+@mixin clear($clear){
+	clear: $clear;
+}
+
+//table
+@mixin table($wd, $thwd:auto, $tdwd:auto){
+	display: table;
+	width: $wd;
+	margin: 0 auto;
+	.tr{
+		display: table-row;
+	}
+	.th{
+		display: table-cell;
+		width: $thwd;
+	}
+	.td{
+		display: table-cell;
+		width: $tdwd;
+	}
+}
+
+@mixin td($wd, $maxwd){
+	display: table-cell;
+	width: $wd;
+	max-width:$maxwd;
+}
+
+@mixin ultb($wd, $tdwd:auto,$valign:auto){
+	display: table;
+	width: $wd;
+	margin: 0 auto;
+	li{
+		display: table-cell;
+		width: $tdwd;
+		vertical-align: $valign;
+	}
+}
+
+
+//button
+@mixin btsty($bgcolor, $color, $size){
+	background: $bgcolor;
+	color:$color;
+	display: block;
+	border:$bgcolor 2px solid;
+	font-size:$size;
+	cursor: pointer;
+	&:hover{
+		background: none;
+		box-shadow:$bgcolor 0 0 20px;
+	}
+}
+
+//shadow
+@mixin box-shadow($shadow...){
+	-webkit-box-shadow:$shadow;
+	-moz-box-shadow:$shadow;
+	box-shadow:$shadow; 
+}
+
+@mixin text-shadow($shadow...){
+	-webkit-text-shadow:$shadow;
+	-moz-text-shadow:$shadow;
+	text-shadow:$shadow; 
+}
+
+//radius
+@mixin radius($radius){
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	border-radius:$radius;
+}
+
+//media Query
+
+//pc
+@mixin vw2560() {
+	@media screen and (max-width:2560px){
+        @content;
+     }
+}
+@mixin vw1920() {
+	@media screen and (max-width:1920px){
+        @content;
+     }
+}
+@mixin vw1680() {
+	@media screen and (max-width:1680px){
+        @content;
+     }
+}
+@mixin vw1536() {
+	@media screen and (max-width:1536px){
+        @content;
+     }
+}
+@mixin vw1366() {
+	@media screen and (max-width:1366px){
+        @content;
+     }
+}
+@mixin vw1280() {
+	@media screen and (max-width:1280px){
+        @content;
+     }
+}
+@mixin vw1024() {
+	@media screen and (max-width:1024px){
+        @content;
+    }
+}
+
+
+//平板
+@mixin vw960() {
+	@media screen and (max-width:960px){
+        @content;
+    }
+}
+
+
+//小平板
+@mixin vw768() {
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+@mixin vw640() {
+    @media screen and (max-width:640px){
+        @content;
+    }
+}
+//手機
+@mixin vw480() {
+    @media screen and (max-width:480px){
+        @content;
+    }
+}
+
+
+

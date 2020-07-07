@@ -1,0 +1,258 @@
+@import 'var_prod';
+#bt-filter-show{
+	background: #1a1a1a;
+	border: none;
+	width: 100%;
+	color: #fff;
+	padding:25px;
+	font-size: 16px;
+	cursor: pointer;
+	i{
+		margin-right: 5px;
+	}
+	.icon-msi-up-arrow{
+		display: none;
+	}
+	&.on{
+		border-bottom: #333 1px solid;
+		.icon-msi-up-arrow{
+			display: inline-block;
+		}
+		.icon-msi-level{
+			display: none;
+		}
+	}
+}
+.aside-nav{
+	background: #1a1a1a;
+	padding: 25px 25px 30px;
+	fieldset{
+		margin-bottom: 10px;
+		border-bottom: #222 1px solid;
+	}
+	legend, .pd-title{
+		display: block;
+		font-size: 18px;
+		text-transform: uppercase;
+		padding-bottom: 20px;
+		width: 100%;
+		padding-top: 10px;
+	}
+	.filter-title{
+		&:after{
+			content: "";
+		}
+	}
+	.filter-options{
+		padding-left: 30px;
+		padding-bottom: 15px;
+		li{
+			padding: 0 0 12px;
+			font-size: 16px;
+		}
+	}
+	.filter-group{
+		cursor: pointer;
+		&:last-child{
+			padding-bottom: 15px;
+		}
+
+		&:first-child{
+			padding-top: 25px;
+		}
+		.filter-options{
+			display: none;
+			padding-bottom: 20px;
+		}
+	}
+	.filter-group-title{
+		font-size: 16px;
+		padding-left: 10px;
+		padding-bottom: 12px;
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			@include bg-cover("icon-arrow-right-red.svg", center,center);
+			margin-right: 10px;
+		}
+	}
+	input[type="checkbox"]{
+		display: none;
+		&:disabled + label{
+			opacity: .25;
+			&:hover{
+				color: #fff;
+				cursor: not-allowed;
+				&:before{
+					border-color: #fff;
+				}
+			}
+		}
+		&:checked + label{
+			color: $col-red;
+			&:before{
+				background: $col-red;
+				border-color: $col-red2;
+			}
+		}
+	}
+	label{
+		cursor: pointer;
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border: #fff 1px solid;
+			border-radius: 3px;
+			margin-right: 12px;
+		}
+		&:hover{
+			color: $col-red;
+			&:before{
+				border-color: $col-red;
+			}
+		}
+	}
+	.bt{
+		padding-top: 10px;
+		button{
+			background: #404040;
+			border: none;
+			text-transform: uppercase;
+			font-size: 16px;
+			color: #fff;
+			padding: 10px;
+			border-radius: 3px;
+			cursor: pointer;
+			transition: $ts;
+			&:hover{
+				background: #fff;
+				color: #000;
+			}
+			i{
+				margin-right: 5px;
+			}
+		}
+	}
+	.bt-filter-group{
+		cursor: pointer;
+		&:after{
+			content: "\e90b";
+			font-family: 'msi-icons' !important;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: #000;
+			display: inline-block;
+			color: #fff;
+			line-height: 22px;
+			text-align: center;
+			font-size: 14px;
+			float: right;
+			transform: rotate(90deg);
+			transition: $ts;
+		}
+		&:hover:after{
+			background: #fff;
+			color: #000;
+		}
+		&.close{
+			&:after{
+				transform: rotate(180deg);
+			}			
+		}
+	}
+	.option-hide{
+		ul, .bt-showmore{display: none;}
+	}
+	.bt-showmore{
+		display: inline-block;
+		font-size: 16px;
+		padding: 0 10px;
+		margin-bottom: 15px;
+		color: #999;
+		cursor: pointer;
+		span{
+			display: none;			
+			&:first-child{
+				display: inline-block;
+			}
+			&:after{
+				content: "...";
+			}
+		}
+		&:before{
+			content: "\e91f";
+			font-family: 'msi-icons' !important;
+			transition: $ts;
+			margin-right: 5px;
+			display: inline-block;
+		}
+		&:hover{
+			color: $col-red;
+		}
+		&.show{
+			span{
+				display: none;
+				&:last-child{
+					display: inline-block;
+				}
+			}
+			&:before{
+				transform: rotate(180deg);
+			}
+		}
+	}
+}
+
+#pd-category{
+	margin-top: 15px;
+	li{
+		padding-bottom: 10px;
+		font-size: 16px;
+		a{
+			color: #fff;
+			&:before{
+				content: "-";
+				padding-right: 5px;
+			}
+			&:hover{
+				color: $col-red;
+			}
+		}
+	}
+	@include vw960{
+		margin-top: 0;
+		border-top: #333 1px solid;
+	} 
+}
+
+@include vw1920{
+	.aside-nav{
+		legend, .pd-title{
+			font-size: 16px;
+		}
+		.filter-options{
+			li{
+				font-size: 14px;
+			}
+		}
+		.filter-group-title{
+			font-size: 14px;
+		}
+		.bt button{
+			font-size: 14px;
+		}
+	}
+	#pd-category li{
+		font-size: 14px;
+	}
+}
+@include vw960{
+	.aside-nav{
+		display: none;
+	}
+}

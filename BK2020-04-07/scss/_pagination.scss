@@ -1,0 +1,30 @@
+.pagination{
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 15px;
+	li{
+		margin-left: 10px;
+		span, a{
+			width: 36px;
+			height: 36px;
+			background:$col-gray3;
+			display: block;
+			text-align: center;
+			line-height: 36px;
+			border-radius: 5px;
+			color: #fff;
+		}
+		&.active{
+			span{
+				background:$col-red;
+			}
+		}
+		a:hover{
+			background: #fff;
+			color: $col-gray3;
+		}
+	}
+	@include vw1920{
+		font-size: 14px;
+	}
+}

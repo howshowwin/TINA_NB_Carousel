@@ -1,0 +1,54 @@
+/* CSS Document */
+
+@import 'mixin';
+$col: #00C0EF;
+$col1:#6C757D;;
+$img-url:"../images";
+
+
+body{
+	background: #EDF1F5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+#login{
+	background: #fff;
+	border: #DEE2E6 1px solid;
+	border-top: #54667A 8px solid;
+	@include bc(100%,465px);
+	padding:40px 40px 30px;
+	text-align: center;
+	margin-bottom: 5%;
+	.header{
+		padding:20px 0 30px;
+	}
+	.item{
+		padding-bottom: 18px;
+		input{
+			border: #DEE2E6 1px solid;
+			padding:10px;
+			width: 100%;
+			color: #343A40;
+			outline: none;
+		}
+	}	
+	h5{
+		font-size: 20px;
+		padding-top: 35px;
+		color: #999;
+		font-weight: normal;
+		font-size: 14px;
+	}
+	.account{
+		@include bg-img("icon-peo.png",center,right,no-repeat);
+	}
+	.pswd{
+		@include bg-img("icon-key.png",center,right,no-repeat);
+	}
+	.bt{
+		padding-top: 18px;
+	}
+}

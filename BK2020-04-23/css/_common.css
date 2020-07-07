@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@font-face {
+  font-family: MSIBodyFont;
+  src: local(Segoe UI), local(Heiti TC), local("微軟正黑體"), local("黑体"), sans-serif; }
+
+@font-face {
+  font-family: 'MSIBodyFont';
+  src: local("Meiryo UI"), local("ヒラギノ角ゴ Pro W3");
+  unicode-range: U+3000-9FFF, U+ff??; }
+
+/* Latin characters */
+@font-face {
+  font-family: 'MSIBodyFont';
+  unicode-range: U+00-024F;
+  src: local(Helvetica), local(Arial); }
+
+@font-face {
+  font-family: 'MSIBodyFont';
+  src: local("Noto Sans TC"), local("微軟正黑體"), local("Microsoft JhengHei");
+  unicode-range: U+4E00-9FFF; }
+
+/* 注音符號專用 */
+@font-face {
+  font-family: MSIBodyFont;
+  unicode-range: U+3100-312F;
+  src: local("Noto Sans TC"), local("微軟正黑體"), local("Microsoft JhengHei"); }
+
+a {
+  text-decoration: none;
+  noFocusline: expression(this.onFocus=this.blur());
+  outline: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+a:focus {
+  -moz-outline-style: none; }
+
+/*img*/
+img {
+  max-width: 100%;
+  width: expression(document.body.clientWidth>100?"100%":"auto");
+  overflow: hidden; }
